@@ -39,7 +39,7 @@ ShoppyGlobe is a fully functional e-commerce web application built with React, R
     npm start
     ```
 
-5. Open your browser and go to [http://localhost:3000](http://localhost:3000).
+5. Open your browser and go to http://localhost:5173/
 
 ## Project Structure
 
