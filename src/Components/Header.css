@@ -1,0 +1,117 @@
+/* src/components/Header.css */
+
+/* General header styling */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+/* Navigation Styling */
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+
+/* Navigation links styling */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+/* Cart Link Styling */
+.cart-link {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Cart Icon Styling */
+.cart-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Cart Hover Effect */
+.cart-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .header h1 {
+        font-size: 1.4rem;
+    }
+
+    .nav {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .cart-link {
+        margin-top: 10px;
+    }
+}

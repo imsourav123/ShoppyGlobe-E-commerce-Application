@@ -1,0 +1,37 @@
+/* src/components/ProductList.css */
+
+/* Container for all products */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 items per row */
+    gap: 20px;
+    /* Space between items */
+    padding: 20px;
+    justify-items: center;
+    /* Center items horizontally */
+    align-items: flex-start;
+    /* Align items to the top */
+}
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 1200px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 items per row for medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 items per row for tablets and smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-list {
+        grid-template-columns: 1fr;
+        /* 1 item per row for mobile */
+    }
+}
