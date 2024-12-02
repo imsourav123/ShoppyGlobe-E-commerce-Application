@@ -21,7 +21,7 @@ ShoppyGlobe is a fully functional e-commerce web application built with React, R
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/your-username/shoppyglobe.git
+    https://github.com/imsourav123/ShoppyGlobe-E-commerce-Application
     ```
 
 2. Navigate to the project directory:
